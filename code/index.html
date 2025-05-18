@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HappeningNow</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <header class="hero-section">
+        <div class="top-bar">HappeningNow</div>
+    </header>
+    <main class="MainContent">
+        <div class="FiltersContainer">
+            <div class="select-wrapper">
+                <select id="categorySelector" class="CategorySelector">
+                    <option value="">Loading categories...</option>
+                </select>
+            </div>
+            <div class="keyword-input-container">
+                <input type="text" id="keywordsInput" class="keywords-input">
+                <svg xmlns="http://www.w3.org/2000/svg" class="search-icon"
+                            width="24" height="24" 
+                            viewBox="0 0 24 24" 
+                            fill="none" 
+                            stroke="black" 
+                            stroke-width="2" 
+                            stroke-linecap="round" 
+                            stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </div>
+            <div class="date-container">
+                <input type="date" id="dateInput" class="date-input">
+                <button id="dateFilterButton" class="date-button">Search by Date</button>
+            </div>
+        </div>
+        <div class="EventsContainer" id="eventsContainer">
+        </div>
+        <div class="arrows-container">
+            <button id="pagination-arrow-left" class="arrow-left arrow">
+                <svg width="50" height="50" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18L9 12L15 6" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button id="pagination-arrow-right" class="arrow-right arrow">
+                <svg width="50" height="50" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18L9 12L15 6" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+        <footer class="footer">
+            © 2025 HappeningNow. All rights reserved.
+        </footer>
+        <div class="loading-indicator" id="loadingIdicator">
+            Loading ...
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
